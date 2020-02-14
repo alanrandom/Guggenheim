@@ -1,0 +1,38 @@
+<div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSc0I76KtMuAhSnAvAA-mBqylkKJlbWQa7onEqvOSKHSGJ0Pgg-" />
+</div>
+
+<table>
+  <tr>
+    <td>Number of minutes traveling above 6 MPH</td>
+    <td><input id="moreSix" [(ngModel)]='inputs.overSix' /></td>
+    <td *ngIf="!overCheck()">time must be a valid whole number of minutes</td>
+  </tr>
+  <tr>
+    <td>Number of miles while traveling below 6 MPH</td>
+    <td><input id="lessSix" [(ngModel)]='inputs.underSix' /></td>
+    <td *ngIf="!underCheck()">value must be rounded to nearest fifth and positive</td>
+  </tr>
+
+  <tr>
+    <td>Date</td>
+    <td><input id="day" [(ngModel)]='inputs.date' /></td>
+    <td *ngIf="!dateCheck()">Date must be of form YYYY-MM-DD</td>
+  </tr>
+  <tr>
+    <td>Time of start of ride</td>
+    <td><input id="time" [(ngModel)]='inputs.rideStartTime' /></td>
+    <td *ngIf="!timeCheck()">Time must be of form HH:MM (military time)</td>
+  </tr>
+<br />
+
+<div>
+  <button id="priceCalc" (click)="postCalculate()">Get Price for Ride</button>
+  <p *ngIf="!finalPrice">please fill in fields with appropriate values</p>
+
+  <div class="results">
+    <p *ngIf="finalPrice">Total: {{finalPrice | currency: 'USD':true:'1.2-2'}} </p>
+  </div>
+  <br /> <br />
+</div>
+

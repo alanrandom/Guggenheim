@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuggenheimFinal", "GuggenheimFinal\GuggenheimFinal.csproj", "{926C5C5C-823C-4CD9-B929-4FE051283437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuggenheimFinal.Tests", "GuggenheimFinal.Tests\GuggenheimFinal.Tests.csproj", "{230EBEAC-D188-4B17-9633-6F74B16F6AF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{926C5C5C-823C-4CD9-B929-4FE051283437} = {926C5C5C-823C-4CD9-B929-4FE051283437}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{926C5C5C-823C-4CD9-B929-4FE051283437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926C5C5C-823C-4CD9-B929-4FE051283437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926C5C5C-823C-4CD9-B929-4FE051283437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926C5C5C-823C-4CD9-B929-4FE051283437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230EBEAC-D188-4B17-9633-6F74B16F6AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230EBEAC-D188-4B17-9633-6F74B16F6AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230EBEAC-D188-4B17-9633-6F74B16F6AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230EBEAC-D188-4B17-9633-6F74B16F6AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CA6CF44-7C96-46A6-85AD-FA5CAFACD79E}
+	EndGlobalSection
+EndGlobal

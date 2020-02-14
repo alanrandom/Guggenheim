@@ -1,0 +1,25 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ChargesComponent } from './Charges/charges.component';
+import { ChargesService } from './charges.service';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ChargesComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule, 
+    HttpClientModule
+  ],
+  providers: [ChargesService],  
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
